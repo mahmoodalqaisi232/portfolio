@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rouge+Script&family=Saira+Condensed:wght@300&family=Saira:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&family=Saira+Condensed:wght@300&family=Saira:wght@100&display=swap');
+
+.parallax2{
+position: relative;
+font-family: 'Roboto', sans-serif;
+color: white;
+margin-top: 10vh;
+height: 60vh;
+z-index: 1;
+display: flex;
+font-weight: bold;
+align-items: center;
+justify-content: start;
+padding-left: 20px;
+}
+
+.parallax2::before{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("../images/parallax11.jfif");
+    background-attachment:fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

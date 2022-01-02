@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rouge+Script&family=Saira+Condensed:wght@300&family=Saira:wght@100&display=swap");
+
+
+.textColor{
+    color: rgb(80, 47, 43);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.card{
+    border:0;
+    background: transparent;
+}
+
+/* h1{
+    font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+} */

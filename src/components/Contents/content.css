@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&family=Saira+Condensed:wght@300&family=Saira:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rouge+Script&family=Saira+Condensed:wght@300&family=Saira:wght@100&display=swap");
+
+/* $bgColor:#0F1A34;
+$blue:#103186; */
+
+*{font-family: 'Roboto', sans-serif;}
+
+.box{
+     background-color: #0F1A34;
+    background-image: linear-gradient(to bottom, #0F1A34 25%, rgb(80, 47, 43) 100%);
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
