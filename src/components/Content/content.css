@@ -5,6 +5,14 @@
 
 
 
+.mySwiper{
+    height: 100vh;
+}
+
+
+
+
+
 /* .sideNav{
     border-right: 1px white solid;
     float: left;
@@ -47,28 +55,28 @@ li:hover{
 } */
 
 
- .hero-container{
+ /* .hero-container{
     height:100vh; 
      background-image: url("../images/heroBackground.png");
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
-}
+} */
 
-.hero-heading{
+/* .hero-heading{
     font-size:3em;
-    /* background-image: linear-gradient(to right, #ffffff 0%, #103186 90%);
+    background-image: linear-gradient(to right, #ffffff 0%, #103186 90%);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-}
+    -webkit-text-fill-color: transparent;
+} */
 
-.hero-description:first-of-type{
+/* .hero-description:first-of-type{
     font-weight: bold;
     font-size: 1.1em;
     
-}
-.hero-description:first-of-type::before{
+} */
+/* .hero-description:first-of-type::before{
     content: "{";
     animation: blink 2s linear  infinite;
 }
@@ -98,4 +106,4 @@ li:hover{
     height: 50%;
     object-fit: cover;
     object-position: center;
-}
+} */

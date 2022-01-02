@@ -1,0 +1,54 @@
+
+.hero-container{
+    height:100vh; 
+    background-image: url("../images/heroBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+
+
+.hero-heading{
+    font-size:3em;
+    /* background-image: linear-gradient(to right, #ffffff 0%, #103186 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.hero-description:first-of-type{
+    font-weight: bold;
+    font-size: 1.1em;
+    
+}
+.hero-description:first-of-type::before{
+    content: "{";
+    animation: blink 2s linear  infinite;
+}
+.hero-description:first-of-type::after{
+    content: " }";
+    animation: blink 2s linear  infinite;
+}
+@keyframes blink {
+    100%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    25%{
+        opacity: 0.25;
+    }
+}
+.myBtn{
+    background-color:#103186 ;
+}
+.myImg{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+}

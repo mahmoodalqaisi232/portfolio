@@ -1,23 +1,12 @@
 import React from "react"
-import Nav from "../navbar/navbar";
-import "./header.css"
+import "./hero.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import "swiper/css/pagination"
-import SwiperCore, {Mousewheel,Pagination} from 'swiper';
-SwiperCore.use([Mousewheel,Pagination]);
 
 
-function Header(){
+function Hero(){
     return(
-    <div className="container-fluid ps-0 pe-0 bg-dark">
-        {/* Left-side */}
-        <Nav/>
-        {/* right-side */}
-        <aside>
-            <Swiper>
-        <div className="continer hero-container d-flex justify-content-around pt-5">
+        <>
+<div className="continer hero-container d-flex justify-content-around pt-5">
             <div className="text-white pt-5">
                 <h1 className="pb-3 hero-heading">Welcome to My World !</h1>
                 <p className="mt-4 mb-0 ps-4 hero-description"> I'm Mahmood, Frontend Web Developer</p>
@@ -28,9 +17,8 @@ function Header(){
                 <img src={require("../images/MyImg.png")} alt="MyImg" className="myImg"/>
             </div>
         </div>
-        </Swiper>
-        </aside>
-    </div>
-    )
+        </>
+        )
 }
-export default Header;
+
+export default Hero

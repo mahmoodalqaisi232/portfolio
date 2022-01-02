@@ -1,16 +1,16 @@
 import React from "react";
 import "./App.css"
-import Content from "./components/Contents/content.js";
-import Tech from "./components/Tech/tech.js";
-import Parallax1 from "./components/Parallax1/parallax1.js";
-import Parallax2  from "./components/Parallax2/parallax2.js"
-import Header from "./components/Header/header";
+import Content from "./components/Content/content"
+// import Tech from "./components/Tech/tech.js";
+// import Parallax1 from "./components/Parallax1/parallax1.js";
+// import Parallax2  from "./components/Parallax2/parallax2.js"
+// import Header from "./components/Content/content";
 
 
 function App(){
     return(
         <>
-        <Header />
+        <Content />
          {/* <Content />
         <br/><br/><br/><br/><br/>
         <Parallax1/>
