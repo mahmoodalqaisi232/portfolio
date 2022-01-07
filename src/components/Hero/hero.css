@@ -1,15 +1,34 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&family=Rouge+Script&family=Saira+Condensed:wght@300&family=Saira:wght@100&display=swap');
+*{font-family: 'Saira', sans-serif;}
 .hero-container{
     height:100vh; 
-    background-image: url("../images/heroBackground.png");
+    background-image: url("../images/hero2.jfif");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
+    /* filter: blur(1px);
+    -webkit-filter: blur(1px); */
+   
 } 
 
+.hero-content{
+   font-family: 'Saira', sans-serif;
+   width: 100%;
+   height: 100%;
+   display:flex;
+   flex-direction: column;
+   align-content: flex-start;
+   text-align: center;
+   
+}
 
 .hero-heading{
-    font-size:3em;
+    font-size: 5em;
+    font-weight: bolder;
+    color: whitesmoke;
+    text-shadow: #474747 3px 5px 2px;
+    color: #FFFFFF;
+
     /* background-image: linear-gradient(to right, #ffffff 0%, #103186 90%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -18,11 +37,13 @@
 
 .hero-description:first-of-type{
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 2em;
+    text-shadow: #474747 3px 2px 2px;
+    color: #FFFFFF;
     
 }
 .hero-description:first-of-type::before{
-    content: "{";
+    content: "{ ";
     animation: blink 2s linear  infinite;
 }
 .hero-description:first-of-type::after{
@@ -43,8 +64,9 @@
         opacity: 0.25;
     }
 }
-.myBtn{
-    background-color:#103186 ;
+.tech-hero{
+    background-color:#97660a9b ;
+    width: 30vw;
 }
 .myImg{
     width: 100%;
