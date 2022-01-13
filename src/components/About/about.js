@@ -1,5 +1,6 @@
 import React from "react";
-import "./about.css";
+import { Fade } from "react-awesome-reveal";
+import "./about.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class About extends React.Component {
@@ -12,30 +13,29 @@ class About extends React.Component {
           <br />
           <br />
           <br />
-          <p className="text-center fs-4 p-0 rounded text-white m-0 w-100">
+          <Fade>
+          <p className="text-center fs-1 p-0 rounded textdark m-0 w-100">
             <span
-              className="p-2 rounded"
-              style={{ backgroundColor: "#97660a9b " }}
-            >
+              className="p-2 section-title" >
               "Success is a Journey, not a Destination"
             </span>
           </p>
-          <div
-            className="container-fluid about-content-container mt-4"
-            id="about">
-            {/* left-Side-Img */}
-            <div className="card img-container w-25 bg-dark">
+          </Fade>
+          <Fade>
+          <div className="about-content-container mt-4" id="about">
+            <div className="info-about text-white w-75">
+              {/* left-Side-Img */}
+            <div className="img-container ps-3 w-50">
               <figure className=" pt-4">
                 <img
                   className="card-img myImg-about"
-                  src={require("../images/AboutImg.png")}
+                  src={require("../images/fococlipping-20220107-16722.png")}
                   alt="personal"
                 />
               </figure>
             </div>
             {/* Right-Side-Info */}
-            <div className="card info-about w-50 bg-dark text-white ">
-              <div className="card-body">
+              <div className="card-body w-75">
                 <h2 className="title fw-bold mt-5 pt-5 text-center">
                   Mahmood Al Qaisi
                 </h2>
@@ -59,6 +59,7 @@ class About extends React.Component {
               </div>
             </div>
           </div>
+          </Fade>
         </section>
       </>
     );

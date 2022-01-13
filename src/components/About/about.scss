@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&family=Rouge+Script&family=Saira+Condensed:wght@300&family=Saira:wght@100&display=swap');
+
+.about-section{
+  height: 100%;
+}
+
+
+  .about-content-container{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ 
+
+  }
+  .img-container{
+    padding-left: 0.4vw;
+    padding-top: 1vh;
+
+  }
+  .myImg-about{
+    border-radius:31% 60% 49% 51% / 30% 52% 48% 60% ;
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+       box-shadow:
+       rgba(224, 216, 216, 0.3) 4px -10px,
+       rgba(207, 195, 195, 0.2) -6px 8px, 
+       rgba(129, 116, 116, 0.2) -5px 12px;
+      filter:grayscale(40%) brightness(80%);
+      background-color: rgba(255, 255, 255, 0.938);
+    }
+
+    .info-about{
+      // border-radius: 2%;
+      // box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+      display: flex;
+      background-color: rgba(3, 7, 8, 0.561);
+      // background-color: rgba(101, 123, 141, 0.157);
+      box-shadow: rgba(227, 227, 233, 0.1) 0px 0px 25px;
+
+    }
+    .section-title{
+
+      color: white;
+    }
+    .title{ 
+      // font-family: 'Saira', sans-serif;
+      color: rgba(214, 130, 20, 0.644);
+     }
+  
+    p{
+      font-weight: bold;
+    }

@@ -1,51 +1,59 @@
+.projects-main-container {
+  width: 90%;
+}
 
-/* .projects-main-container{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-} */
+.project-card {
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 20%;
+  border-color: white;
+  max-width: 25vw;
+  -webkit-box-shadow: rgba(227, 227, 233, 0.1) 0px 0px 25px;
+          box-shadow: rgba(227, 227, 233, 0.1) 0px 0px 25px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  background-color: rgba(101, 123, 141, 0.301);
+}
 
+.card-number {
+  position: absolute;
+  top: 50%;
+  right: -3vh;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  color: #a89696;
+}
 
-.project-card{
-    border-bottom-left-radius: 20%;
-    border-top-right-radius: 20%;
-    position: relative;
-    z-index: 0;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-    transform: scale(0.8);
+.project-card-title {
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.342);
+  background-color: transparent;
 }
-.card-number{
-    position: absolute;
-    top: 50%;
-    right: -3vh;
-    transform: rotate(-90deg);
-    font-size: 1.3rem;
-    letter-spacing: 2px;
-    color: rgba(122, 108, 108, 0.849);
-}
-.project-card-title{
-    font-size: 2em;
-    color: rgba(255, 255, 255, 0.342);
-    background-color: transparent;
 
-    
+.card-img-top {
+  -webkit-filter: opacity(0.9);
+          filter: opacity(0.9);
+  width: 90%;
+  border: 1px solid rgba(191, 191, 214, 0.315);
 }
-.card-img-top{
-    filter:opacity(0.9);
-    width: 90%;
-    border: 1px solid rgba(191, 191, 214, 0.315);
+
+.project-card-button {
+  color: rgba(212, 124, 22, 0.719);
+  outline: rgba(212, 124, 22, 0.719) solid 2px;
+  font-size: 0.6em;
+  font-weight: bold;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
-.project-card-button{
-    color:rgba(212, 124, 22, 0.719);
-    outline:rgba(212, 124, 22, 0.719) solid 2px ;
-    font-size: 0.6em;
-    font-weight: bold;
-    transition:all 0.4s ease-in-out;
+
+.project-card-button:hover {
+  color: rgba(255, 255, 255, 0.719);
+  outline: rgba(255, 255, 255, 0.719) double 4px;
 }
-.project-card-button:hover{
-    color:rgba(8, 5, 0, 0.719);
-    outline:rgba(8, 5, 0, 0.719) solid 2px ;
-}
+
 /* .project-card::before{
     position: absolute;
     width: 449px;
@@ -89,3 +97,4 @@ flex-wrap: wrap;
     transform: translateY(193px);
     padding-top: 8vh;
 } */
+/*# sourceMappingURL=projects.css.map */

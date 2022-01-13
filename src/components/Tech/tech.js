@@ -26,7 +26,7 @@ class Tech extends React.Component {
               <div className="row g-0 ">
                 <div className="col-5  text-center">
                   <Fade direction="up">
-                    <FontAwesomeIcon icon={faJs} size="10x" color="#0F1A34" />
+                    <FontAwesomeIcon icon={faJs} size="10x" color="#fff" />
                   </Fade>
                 </div>
                 <div className="col-5  text-end ">
@@ -34,7 +34,7 @@ class Tech extends React.Component {
                     <FontAwesomeIcon
                       icon={faAngular}
                       size="10x"
-                      color="#0F1A34"
+                      color="#fff"
                     />
                   </Fade>
                 </div>
@@ -52,7 +52,7 @@ class Tech extends React.Component {
                     <FontAwesomeIcon
                       icon={faBootstrap}
                       size="10x"
-                      color="#0F1A34"
+                      color="#fff"
                     />
                   </Fade>
                 </div>
@@ -62,7 +62,7 @@ class Tech extends React.Component {
                     <FontAwesomeIcon
                       icon={faHtml5}
                       size="10x"
-                      color="#0F1A34"
+                      color="#fff"
                     />
                   </Fade>
                 </div>
@@ -77,7 +77,7 @@ class Tech extends React.Component {
               <div className="row g-0 ">
                 <div className="col-5  text-center">
                   <Fade direction="up">
-                    <FontAwesomeIcon icon={faCss3} size="10x" color="#0F1A34" />
+                    <FontAwesomeIcon icon={faCss3} size="10x" color="#fff" />
                   </Fade>
                 </div>
 
@@ -86,7 +86,7 @@ class Tech extends React.Component {
                     <FontAwesomeIcon
                       icon={faSass}
                       size="9x"
-                      color="#0F1A34"
+                      color="#fff"
                       className="p-0"
                     />
                   </Fade>
@@ -103,7 +103,7 @@ class Tech extends React.Component {
                     <FontAwesomeIcon
                       icon={faReact}
                       size="10x"
-                      color="#242323"
+                      color="#fff"
                     />
                   </Fade>
                 </div>

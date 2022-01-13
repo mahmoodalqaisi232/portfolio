@@ -1,23 +1,27 @@
 import React from "react";
-import "./hero.css";
+import "./hero.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../../fonts/Slaztone.otf";
+import { AttentionSeeker } from "react-awesome-reveal";
 
 class Hero extends React.Component {
   render() {
     return (
       <>
-        <div className="hero-container pt-5">
-          <div className="text-white hero-content">
-            <h1 className="pb-3 hero-heading">Welcome to My World !</h1>
-            <p className="mt-4 mb-0 ps-4 hero-description">
-              I'm Mahmood, Frontend Web Developer
-            </p>
-            <div>
-              <code className="text-white ps-4 tech-hero">
-                JavaScript / Angular / TypeScript / CSS3 / SCSS / Bootstrap
-              </code>
+        <div className="hero-container">
+          <h1 className="pb-3 hero-heading text-center">
+            Welcome to My World !
+          </h1>
+          <AttentionSeeker effect="headShake" className="hero-content">
+            <div className="text-white text-center">
+              <div className="mt-4 mb-0 hero-description">
+                Hi !I'm Mahmood
+                <span className="ms-2 mySpan-Hero">
+                  a Junior Frontend Developer{" "}
+                </span>
+              </div>
             </div>
-          </div>
+          </AttentionSeeker>
         </div>
       </>
     );

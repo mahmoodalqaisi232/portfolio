@@ -11,12 +11,6 @@ function App(){
     return(
         <>
         <Content />
-         {/* <Content />
-        <br/><br/><br/><br/><br/>
-        <Parallax1/>
-        <Tech />
-        <Parallax2/> */}
-        {/* <Projects /> */}
         </> 
     )
 }

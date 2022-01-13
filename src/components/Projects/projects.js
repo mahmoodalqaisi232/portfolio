@@ -1,7 +1,7 @@
 import React from "react";
 import data from "./projectsData";
 import { Fade } from "react-awesome-reveal";
-import "./projects.css";
+import "./projects.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class Projects extends React.Component {
@@ -13,14 +13,14 @@ class Projects extends React.Component {
     const mapped = this.ProjectsData.map(function (el) {
       return (
         <>
-          <Fade className="col-4 project-card m-auto mt-3 p-0">
+          <Fade className="card col-4 project-card m-auto  p-0">
             <div>
               <p className="card-number m-0 px-2">Project {el.id} </p>
               <div className="card-image-container ps-1">
                 <img
                   src={require("../images/" + el.imgUrl + ".jpg")}
                   key={el.id}
-                  className="card-img-top"
+                  className="card-img-top opacity-100"
                   alt={el.title}
                 />
               </div>
@@ -38,8 +38,8 @@ class Projects extends React.Component {
     });
     return (
       <>
-        <div className="container-fluid h-100 projects-main-container">
-          <div className="row">{mapped}</div>
+        <div className="container-fluid projects-main-container mt-5 pt-4">
+          <div className="row ">{mapped}</div>
         </div>
       </>
     );

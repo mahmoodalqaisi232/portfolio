@@ -1,41 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&family=Saira+Condensed:wght@300&family=Saira:wght@100&display=swap'); 
-.sideNav{
-    border-right: 1px white solid;
-    float: left;
-    top: 0;
-    height: 100vh;
-    width: 15%;
-    background-color: rgb(1, 4, 29);
-    color:white;
-    padding-top: 10vh;
-    text-align: center;
-    
+@font-face {
+  font-family: "Slatzone";
+  src: local("Slatzone"), url("../../fonts/Slaztone.otf") format("truetype");
 }
-.menu{
-    height: 70vh;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-left: 0;
-    
+
+#hamburger-menu {
+  padding-top: 2vh;
+  width: 15vw;
+  float: left;
 }
-.menu >li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    width: 100%;
-    height: 20%;
-    transition: all 0.5s;
+
+#hamburger-menu:hover:not(.change) .hamburger-bottom {
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
 }
-li:hover{
-    background-color: rgb(206, 191, 191);
-    color: black;
-    font-weight: bold;
-    
+
+#hamburger-menu:hover:not(.change) .hamburger-top {
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
 }
-.logo{
-    font-family: 'Rouge Script', cursive,sans-serif;
-    font-size: 2.3em;
+
+.hamburger-top, .hamburger-middle, .hamburger-bottom {
+  background-color: whitesmoke;
+  width: 2.5vw;
+  border-radius: 8%;
+  height: 0.4vh;
+  margin-bottom: 0.4vw;
+  margin-left: 1vw;
+  -webkit-transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
 }
+
+.change {
+  background-color: rgba(3, 3, 2, 0.753);
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.change .sideNav {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  visibility: visible;
+}
+
+.change .hamburger-top {
+  -webkit-transform: rotate(45deg) translateY(5px) translateX(10px);
+          transform: rotate(45deg) translateY(5px) translateX(10px);
+}
+
+.change .hamburger-middle {
+  opacity: 0;
+}
+
+.change .hamburger-bottom {
+  -webkit-transform: rotate(-45deg) translateY(-5px) translateX(10px);
+          transform: rotate(-45deg) translateY(-5px) translateX(10px);
+}
+
+.sideNav {
+  height: 100vh;
+  width: 14vw;
+  padding-top: 20%;
+  color: rgba(245, 245, 245, 0.507);
+  visibility: hidden;
+  text-align: center;
+}
+
+.menu {
+  height: 70vh;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 0;
+}
+
+.menu > li {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5vw;
+  width: 100%;
+  height: 20%;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+li:hover {
+  background-color: #cebfbf;
+  color: black;
+  font-weight: bold;
+}
+
+.logo {
+  font-family: 'Rouge Script', cursive,sans-serif;
+  font-size: 2vw;
+  color: white;
+}
+/*# sourceMappingURL=navbar.css.map */

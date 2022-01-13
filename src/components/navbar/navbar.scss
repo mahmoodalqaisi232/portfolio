@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Slatzone";
+    src: local("Slatzone"), url("../../fonts/Slaztone.otf") format("truetype");
+}
+
+#hamburger-menu{
+    // background-color: rgba(22, 21, 20, 0.705);
+    padding-top:2vh;
+    width: 15vw;
+    // border-right: 1px white solid;
+    float: left;
+}
+#hamburger-menu:hover:not(.change)  .hamburger-bottom{
+    transform: rotate(-3deg);
+}
+#hamburger-menu:hover:not(.change)  .hamburger-top{
+    transform: rotate(3deg);
+}
+
+.hamburger-top , .hamburger-middle , .hamburger-bottom{
+    background-color: whitesmoke;
+    width: 2.5vw;
+    border-radius: 8%;
+    height: 0.4vh;
+    margin-bottom: 0.4vw;
+    margin-left: 1vw;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+}
+// Add Transition Props. to Change and SideNav
+.change{
+    background-color: rgba(3, 3, 2, 0.753);
+    transition-delay: 0.5s;
+}
+.change .sideNav{
+    transition-delay: 0.5s;
+    visibility: visible;
+    
+}
+.change .hamburger-top{
+        transform: rotate(45deg) translateY(5px) translateX(10px);
+    }
+
+.change .hamburger-middle{
+        opacity: 0;
+    }
+
+.change .hamburger-bottom{
+        transform: rotate(-45deg) translateY(-5px) translateX(10px);
+    }
+
+.sideNav{
+        height: 100vh;
+        width: 14vw;
+        padding-top: 20%;
+        color:rgba(245, 245, 245, 0.507);
+        visibility: hidden;
+        text-align: center; 
+}
+
+
+.menu{
+    height: 70vh;
+    list-style:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 0;
+    
+}
+.menu >li{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    width: 100%;
+    height: 20%;
+    transition-delay: 0;
+}
+li:hover{
+    background-color: rgb(206, 191, 191);
+    color: black;
+    font-weight: bold;
+    
+}
+.logo{
+    font-family: 'Rouge Script', cursive,sans-serif;
+    font-size: 2vw; 
+    color: rgb(255, 255, 255);
+}
