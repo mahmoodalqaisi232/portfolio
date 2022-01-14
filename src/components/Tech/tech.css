@@ -1,21 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rouge+Script&family=Saira+Condensed:wght@300&family=Saira:wght@100&display=swap");
-
-.tech-container{
-    /* background-color: rgba(217, 236, 241, 0.657); */
-    height: 100%;
-}
-.textColor{
-    color: rgb(80, 47, 43);
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+@font-face {
+  font-family: "Slatzone";
+  src: local("Slatzone"), url("../../fonts/Slaztone.otf") format("truetype");
 }
 
-.card{
-    border:0;
-    background:transparent;
+.tech-container {
+  /* background-color: rgba(217, 236, 241, 0.657); */
+  height: 100%;
 }
 
-/* h1{
-    font-family: Copperplate / Copperplate Gothic Light, sans-serif;
-} */
+.tech-heading {
+  font-family: "Slatzone", "saira", sans-serif;
+  font-size: 5vw;
+  padding-top: 4vh;
+  color: rgba(255, 255, 255, 0.904);
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2 both;
+  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1 both;
+}
+
+.textColor {
+  color: #502f2b;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.card {
+  border: 0;
+  background: transparent;
+}
+/*# sourceMappingURL=tech.css.map */

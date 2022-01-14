@@ -9,7 +9,7 @@ class Hero extends React.Component {
     return (
       <>
         <div className="hero-container">
-          <h1 className="pb-3 hero-heading text-center">
+          <h1 className="pb-3 section-heading text-center">
             Welcome to My World !
           </h1>
           <AttentionSeeker effect="headShake" className="hero-content">

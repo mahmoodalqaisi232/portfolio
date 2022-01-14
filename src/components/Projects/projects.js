@@ -38,7 +38,10 @@ class Projects extends React.Component {
     });
     return (
       <>
-        <div className="container-fluid projects-main-container mt-5 pt-4">
+        <div className="container-fluid projects-main-container">
+        <h1 className="pb-3 section-heading text-center">
+            Projects
+          </h1>
           <div className="row ">{mapped}</div>
         </div>
       </>

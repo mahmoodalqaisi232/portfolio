@@ -4,6 +4,10 @@
   font-family: "saira", sans-serif;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   background: url("../images/trees.jfif.jpg");
   background-position: center;
@@ -13,5 +17,16 @@ body {
 
 .mySwiper {
   height: 100vh;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgba(214, 130, 20, 0.644);
 }
 /*# sourceMappingURL=content.css.map */

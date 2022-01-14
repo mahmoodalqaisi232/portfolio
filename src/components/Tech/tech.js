@@ -17,7 +17,10 @@ class Tech extends React.Component {
   render() {
     return (
       <>
-        <div className="container-fluid tech-container pt-4" id="tech">
+        <div className="container-fluid tech-container" id="tech">
+        <h1 className="pb-3 section-heading text-center">
+            Technologies
+          </h1>
           {/* first Row */}
           <div className="row pt-4">
             {/* <!-- Card --> */}
@@ -26,14 +29,14 @@ class Tech extends React.Component {
               <div className="row g-0 ">
                 <div className="col-5  text-center">
                   <Fade direction="up">
-                    <FontAwesomeIcon icon={faJs} size="10x" color="#fff" />
+                    <FontAwesomeIcon icon={faJs} size="5x" color="#fff" />
                   </Fade>
                 </div>
                 <div className="col-5  text-end ">
                   <Fade direction="up">
                     <FontAwesomeIcon
                       icon={faAngular}
-                      size="10x"
+                      size="5x"
                       color="#fff"
                     />
                   </Fade>
@@ -51,7 +54,7 @@ class Tech extends React.Component {
                   <Fade direction="up">
                     <FontAwesomeIcon
                       icon={faBootstrap}
-                      size="10x"
+                      size="5x"
                       color="#fff"
                     />
                   </Fade>
@@ -61,7 +64,7 @@ class Tech extends React.Component {
                   <Fade direction="up">
                     <FontAwesomeIcon
                       icon={faHtml5}
-                      size="10x"
+                      size="5x"
                       color="#fff"
                     />
                   </Fade>
@@ -77,7 +80,7 @@ class Tech extends React.Component {
               <div className="row g-0 ">
                 <div className="col-5  text-center">
                   <Fade direction="up">
-                    <FontAwesomeIcon icon={faCss3} size="10x" color="#fff" />
+                    <FontAwesomeIcon icon={faCss3} size="5x" color="#fff" />
                   </Fade>
                 </div>
 
@@ -85,7 +88,7 @@ class Tech extends React.Component {
                   <Fade direction="up">
                     <FontAwesomeIcon
                       icon={faSass}
-                      size="9x"
+                      size="5x"
                       color="#fff"
                       className="p-0"
                     />
@@ -102,7 +105,7 @@ class Tech extends React.Component {
                   <Fade direction="up">
                     <FontAwesomeIcon
                       icon={faReact}
-                      size="10x"
+                      size="5x"
                       color="#fff"
                     />
                   </Fade>

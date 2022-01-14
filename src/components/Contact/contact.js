@@ -38,7 +38,7 @@ class Contact extends React.Component {
                             <span className="pe-2 align-self-start">Message</span> 
                         <textarea rows="5" cols="40" placeholder="" name="message" />
                         </label>
-                        <input type={"submit"} className="btn text-white rounded fw-bold" value={"Send Message"} style={{backgroundColor:"rgba(228, 138, 21, 0.328)"}} />
+                        <input type={"submit"} className="btn text-white rounded fw-bold contactBtn" value={"Send Message"}/>
                         </div>
                         <div className="contact-form-right mt-5">
                             <p className="">please feel free to write a feedback or contact me if you have questions about me or my work . </p>

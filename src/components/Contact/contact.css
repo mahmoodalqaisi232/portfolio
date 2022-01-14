@@ -66,9 +66,13 @@ textarea {
 .contact-form-right {
   position: relative;
   border-radius: 31% 69% 44% 56% / 40% 49% 51% 60%;
-  background-color: rgba(228, 138, 21, 0.328);
+  background-color: rgba(228, 138, 21, 0.287);
   width: 20vw;
   height: 30vh;
   font-weight: bold;
+}
+
+.contactBtn {
+  background-color: rgba(228, 138, 21, 0.287);
 }
 /*# sourceMappingURL=contact.css.map */
