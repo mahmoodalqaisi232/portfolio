@@ -1,93 +1,228 @@
-
-.projects-main-container{
-
-width: 90%;
-} 
-
-
-.project-card{
-    border-bottom-left-radius: 20%;
-    border-top-right-radius: 20%;
-    border-color: white;
-    max-width: 25vw;
-    // box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-    box-shadow: rgba(227, 227, 233, 0.1) 0px 0px 25px;
-    transform: scale(0.8);
-    transition: all 0.7s ease-in-out;
-    background-color: rgba(101, 123, 141, 0.301);
+@import "../variables";
+@font-face {
+  font-family: "Slatzone";
+  src: local("Slatzone"), url("../../fonts/Slaztone.otf") format("truetype");
 }
 
-.card-number{
-    position: absolute;
-    top: 50%;
-    right: -3vh;
-    transform: rotate(-90deg);
-    font-size: 1.3rem;
-    letter-spacing: 2px;
-    color: rgb(168, 150, 150);
+.projectsContainer {
+  height: 100vh;
+  background-image: url("../images/tree1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.project-card-title{
-    font-size: 2em;
-    color: rgba(255, 255, 255, 0.342);
-    background-color: transparent; 
+.section-heading-projects-bg {
+  background-color: rgba(0, 0, 0, 0.596);
+  text-align: end;
 }
-.card-img-top{
-    filter:opacity(0.9);
-    width: 90%;
-    border: 1px solid rgba(191, 191, 214, 0.315);
+.section-heading-projects {
+  font-family: "Slatzone", "saira", sans-serif;
+  font-size: 5vw;
+  color: rgba(255, 255, 255, 0.904);
+  margin: 0;
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2
+    both;
+  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1 both;
 }
-.project-card-button{
-    color:rgba(212, 124, 22, 0.719);
-    outline:rgba(212, 124, 22, 0.719) solid  2px ;
-    font-size: 0.6em;
-    font-weight: bold;
-    transition:all 0.4s ease-in-out;
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.project-card-left {
+  color: rgb(255, 255, 255);
+  width: 25%;
+  max-height: 80%;
+  text-align: center;
+  padding-right: 2vw;
+}
+.card-left-text {
+  font-size: 2vw;
+  color: bisque;
+  background-color: darkslategrey;
+}
+.project-card {
+  position: relative;
+  border-radius: 2%;
+  box-shadow: rgba(227, 227, 233, 0.1) 0px 0px 25px;
+  transition: all 0.7s ease-in-out;
+  background-color: $bgLightDark;
+  box-shadow: $boxShadow;
+  width: 40%;
+  height: 65%;
+  border: 2px solid bisque;
+  opacity: 1;
+}
+.project-card-body {
+  transition: all 0.5s linear;
+  width: 100%;
+  height: 20%;
+  border-top: 2px soild tomato;
+}
+.project-card-title {
+  font-size: 1.5vw;
+  color: bisque;
+}
+.card-image-container {
+  width: 100%;
+  max-height: 80%;
+  text-align: center;
+}
+.cardImg {
+  width: 80%;
+  max-height: 100%;
+  transform: translateY(-25px);
+  border-radius: 2%;
+}
+.cards-row {
+  width: 50%;
+  height: 80%;
+  margin: 0 auto;
+}
+.mySwiper {
+  height: 60vh;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 5vh;
+  display: flex;
+  justify-content: center;
 }
-.project-card-button:hover{
-    color:rgba(255, 255, 255, 0.719);
-    outline:rgba(255, 255, 255, 0.719) double 4px ;
+.swiper-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  background-color: white;
+  width: 15px;
+  height: 15px;
 }
-/* .project-card::before{
-    position: absolute;
-    width: 449px;
-    height: 100%;
-    top: 0;
-    content: "PROJECT 1";
-    font-size: 3em;
-    font-weight: bold;
-    display: flex;
-    justify-content: end; 
-    padding-right: 1vw;
-    color: rgba(212, 124, 22, 0.719);
-    background-color: rgb(0, 0, 0);
-    z-index: 1;
-    transition: all 0.9s ease-in-out;
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgb(95, 148, 148);
+}
 
+// tiny Screens < 375px
+@media screen and(max-width:374px) {
+  .section-heading-projects-bg {
+    text-align: center;
+  }
+  .section-heading-projects {
+    font-size: 4vh;
+  }
+  .swiper-slide {
+    justify-content: space-between;
+  }
+  .project-card {
+    width: 55%;
+    height: 45%;
+  }
+  .project-card-left {
+    width: 40%;
+    text-align: center;
+    padding-right: 0;
+  }
+  .project-card-title {
+    letter-spacing: 0;
+    font-size: 5vw;
+  }
+  .card-left-text {
+    font-size: 5vw;
+  }
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 1vh;
+    height: 1vh;
+  }
 }
-.project-card:hover:before{
-    transform: translateY(-78px);
-    height: 80px;
-   letter-spacing: 2px;
-   color: thistle;
+// Extra small Screens
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .section-heading-projects-bg {
+    text-align: center;
+  }
+  .section-heading-projects {
+    font-size: 8vw;
+  }
+  .swiper-slide {
+    justify-content: space-evenly;
+  }
+  .project-card {
+    width: 55%;
+    height: 45%;
+  }
+  .project-card-left {
+    width: 40%;
+    text-align: center;
+  }
+  .project-card-title {
+    letter-spacing: 0;
+    font-size: 5vw;
+  }
 
-    
-}  */
-/* .project-card::after{
-    position: absolute;
-    bottom: -200px;
-    content: "Travel-O-Matic";
-    display: flex;
-    justify-content: center;
-    color: whitesmoke;
-    font-size: 2em;
-    width: 498px;
-    height: 125px;
-    background-color: rgb(0, 0, 0);
-    z-index: 1;
-    transition:all 0.6s linear;
+  .card-left-text {
+    font-size: 5vw;
+  }
 }
-.project-card:hover:after{
-    transform: translateY(193px);
-    padding-top: 8vh;
-} */
+// Mobile
+@media screen and(min-width:425px) and (max-width: 767px) {
+  .card-left-text {
+    font-size: 5vw;
+  }
+  .section-heading-projects-bg {
+    text-align: center;
+  }
+  .section-heading-projects {
+    font-size: 8vw;
+  }
+  .swiper-slide {
+    justify-content: space-evenly;
+  }
+  .project-card {
+    width: 50%;
+    height: 45%;
+  }
+  .project-card-left {
+    width: 40%;
+    text-align: center;
+  }
+  .project-card-title {
+    letter-spacing: 0;
+    font-size: 5vw;
+  }
+}
+// Tablet
+@media screen and(min-width:768px) and (max-width: 1023px) {
+  .project-card {
+    width: 50%;
+    height: 60%;
+  }
+  .project-card-left {
+    width: 25%;
+    text-align: center;
+  }
+  .project-card-title {
+    letter-spacing: 0;
+    font-size: 2.5vw;
+    padding: 0;
+  }
+}

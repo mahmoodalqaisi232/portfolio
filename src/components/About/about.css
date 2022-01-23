@@ -1,10 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&family=Rouge+Script&family=Saira+Condensed:wght@300&family=Saira:wght@100&display=swap");
 .about-section {
-  height: 100%;
+  height: 100vh;
+  min-height: 100% !important;
+  background: url("../images/nature2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-heading-about-bg {
+  background-color: rgba(0, 0, 0, 0.596);
+  text-align: end;
+}
+
+.section-heading-about {
+  font-family: "Slatzone", "saira", sans-serif;
+  font-size: 5vw;
+  text-align: end;
+  color: rgba(255, 255, 255, 0.904);
+  margin: 0;
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2 both;
+  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1 both;
 }
 
 .about-content-container {
   margin: 0 auto;
+  font-weight: bold;
   padding: 0;
   width: 100%;
   display: -webkit-box;
@@ -45,14 +66,147 @@
 }
 
 .section-title {
-  color: white;
+  color: #527e7e;
 }
 
 .title {
-  color: rgba(214, 130, 20, 0.644);
+  color: bisque;
 }
 
-p {
-  font-weight: bold;
+blockquote {
+  border: 1px bisque solid;
+  width: 75%;
+  margin: 4vh auto;
+}
+
+.card-body p {
+  text-align: justify;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .section-heading-about-bg {
+    text-align: center;
+  }
+  .section-heading-about {
+    font-size: 4vh;
+  }
+  blockquote {
+    display: none;
+  }
+  .info-about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .myImg-about {
+    width: 40%;
+  }
+  figure {
+    text-align: center;
+  }
+  .title {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .section-heading-about-bg {
+    text-align: center;
+  }
+  .section-heading-about {
+    font-size: 8vw;
+  }
+  blockquote {
+    font-size: 4.6vw;
+    margin: 0;
+  }
+  .info-about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .myImg-about {
+    width: 45%;
+  }
+  figure {
+    text-align: center;
+  }
+  .title {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .section-title {
+    display: none;
+  }
+  .section-heading-about-bg {
+    text-align: center;
+  }
+  .section-heading-about {
+    font-size: 8vw;
+  }
+  .about-content-container {
+    width: 90%;
+  }
+  .info-about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .myImg-about {
+    width: 60%;
+  }
+  .title {
+    margin: 0;
+  }
+  figure {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card-body {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-content-container {
+    width: 68%;
+  }
+  .card-body {
+    width: 80%;
+    padding-top: 15vh;
+  }
 }
 /*# sourceMappingURL=about.css.map */

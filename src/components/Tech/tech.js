@@ -17,102 +17,51 @@ class Tech extends React.Component {
   render() {
     return (
       <>
-        <div className="container-fluid tech-container" id="tech">
-        <h1 className="pb-3 section-heading text-center">
-            Technologies
+        <div className="container-fluid p-0 tech-container" id="tech">
+          <h1 className="py-3 section-heading-tech-bg  pe-4 ">
+            <span className="section-heading-tech">Technologies</span>
           </h1>
-          {/* first Row */}
-          <div className="row pt-4">
-            {/* <!-- Card --> */}
-            <div className="card col-10 offset-1">
-              {/* <!-- Card Row  --> */}
-              <div className="row g-0 ">
-                <div className="col-5  text-center">
-                  <Fade direction="up">
-                    <FontAwesomeIcon icon={faJs} size="5x" color="#fff" />
-                  </Fade>
-                </div>
-                <div className="col-5  text-end ">
-                  <Fade direction="up">
-                    <FontAwesomeIcon
-                      icon={faAngular}
-                      size="5x"
-                      color="#fff"
-                    />
-                  </Fade>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* <!-- second Row --> */}
-          <div className="row mb-4 pt-4">
-            {/* <!-- Card --> */}
-            <div className="card col-10 offset-1">
-              {/* <!-- Card Row  --> */}
-              <div className="row g-0 ">
-                <div className="col-5  text-center">
-                  <Fade direction="up">
-                    <FontAwesomeIcon
-                      icon={faBootstrap}
-                      size="5x"
-                      color="#fff"
-                    />
-                  </Fade>
-                </div>
+          <br />
+          {/* Row */}
+          <Fade direction="up">
+            <div className="row m-auto d-flex justify-content-center p-1">
+              {/* <!-- Cards --> */}
 
-                <div className="col-5  text-end ">
-                  <Fade direction="up">
-                    <FontAwesomeIcon
-                      icon={faHtml5}
-                      size="5x"
-                      color="#fff"
-                    />
-                  </Fade>
-                </div>
+              <div className="card myCard">
+                <FontAwesomeIcon icon={faJs} size="5x" color="#fff" />
+                <p className="icon-description">JavaScript</p>
+              </div>
+              <div className="card myCard">
+                <FontAwesomeIcon icon={faAngular} size="5x" color="#fff" />
+                <p className="icon-description">Angular</p>
+              </div>
+              <div className="card myCard">
+                <FontAwesomeIcon icon={faBootstrap} size="5x" color="#fff" />
+                <p className="icon-description">Bootstrap</p>
+              </div>
+              <div className="card myCard ">
+                <FontAwesomeIcon icon={faHtml5} size="5x" color="#fff" />
+                <p className="icon-description">HTML5</p>
+              </div>
+              <div className="card myCard col-2">
+                <FontAwesomeIcon icon={faCss3} size="5x" color="#fff" />
+                <p className="icon-description">CSS3</p>
+              </div>
+              <div className="card myCard col-2">
+                <FontAwesomeIcon
+                  icon={faSass}
+                  size="5x"
+                  color="#fff"
+                  className="p-0"
+                />
+                <p className="icon-description">Sass</p>
+              </div>
+              <div className="card myCard">
+                <FontAwesomeIcon icon={faReact} size="5x" color="#fff" />
+                <p className="icon-description">React</p>
               </div>
             </div>
-          </div>
-          {/* <!-- Third Row  --> */}
-          <div className="row pt-4 mb-4">
-            {/* <!-- Card --> */}
-            <div className="card col-10 offset-1">
-              {/* <!-- Card Row  --> */}
-              <div className="row g-0 ">
-                <div className="col-5  text-center">
-                  <Fade direction="up">
-                    <FontAwesomeIcon icon={faCss3} size="5x" color="#fff" />
-                  </Fade>
-                </div>
-
-                <div className="col-5 text-end ">
-                  <Fade direction="up">
-                    <FontAwesomeIcon
-                      icon={faSass}
-                      size="5x"
-                      color="#fff"
-                      className="p-0"
-                    />
-                  </Fade>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row  pt-4">
-            <div className="card  col-10 offset-1">
-              {/* <!-- Card Row  --> */}
-              <div className="row g-0 ">
-                <div className="col-12  text-center ">
-                  <Fade direction="up">
-                    <FontAwesomeIcon
-                      icon={faReact}
-                      size="5x"
-                      color="#fff"
-                    />
-                  </Fade>
-                </div>
-              </div>
-            </div>
-          </div>
+          </Fade>
         </div>
       </>
     );
