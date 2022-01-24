@@ -59,7 +59,7 @@
   padding-right: 2vw;
 }
 
-.card-left-text {
+.card-left-title {
   font-size: 2vw;
   color: bisque;
   background-color: darkslategrey;
@@ -152,17 +152,25 @@
   .section-heading-projects {
     font-size: 4vh;
   }
+  .mySwiper {
+    height: 80%;
+  }
   .swiper-slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
   .project-card {
-    width: 55%;
-    height: 45%;
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
   }
   .project-card-left {
-    width: 40%;
+    width: 100%;
     text-align: center;
     padding-right: 0;
   }
@@ -170,7 +178,11 @@
     letter-spacing: 0;
     font-size: 5vw;
   }
+  .card-left-title {
+    font-size: 5vw;
+  }
   .card-left-text {
+    text-align: justify;
     font-size: 5vw;
   }
   .swiper-pagination .swiper-pagination-bullet {
@@ -186,30 +198,37 @@
   .section-heading-projects {
     font-size: 8vw;
   }
+  .mySwiper {
+    height: 80%;
+  }
   .swiper-slide {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .project-card {
-    width: 55%;
+    width: 60%;
     height: 45%;
+    margin: 0 auto;
   }
   .project-card-left {
-    width: 40%;
+    width: 100%;
     text-align: center;
   }
   .project-card-title {
     letter-spacing: 0;
     font-size: 5vw;
   }
-  .card-left-text {
+  .card-left-title {
     font-size: 5vw;
   }
 }
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
-  .card-left-text {
+  .card-left-title {
     font-size: 5vw;
   }
   .section-heading-projects-bg {
@@ -218,17 +237,24 @@
   .section-heading-projects {
     font-size: 8vw;
   }
+  .mySwiper {
+    height: 80%;
+  }
   .swiper-slide {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .project-card {
-    width: 50%;
+    width: 66%;
     height: 45%;
+    margin: 0 auto;
   }
   .project-card-left {
-    width: 40%;
+    width: 100%;
     text-align: center;
   }
   .project-card-title {

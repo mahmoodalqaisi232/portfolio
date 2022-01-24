@@ -58,17 +58,9 @@
   margin: 1.5vw;
   width: 15vw;
   padding-top: 1vh;
-  border: darkslategrey 2px solid;
-  transition: all 0.5s ease-in-out;
-  border-radius: 10%;
+  border: bisque 1px solid;
+  border-radius: 8%;
   // animation: Shake 0.6s infinite;
-}
-
-.myCard:nth-of-type(2n) {
-  transform: rotate(10deg);
-}
-.myCard:nth-of-type(2n + 1):not(:last-of-type) {
-  transform: rotate(-10deg);
 }
 .row {
   width: 60vw;
@@ -93,12 +85,16 @@
   }
   .row {
     width: 100%;
+    margin: 20% auto 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
   .myCard {
-    width: 30%;
+    width: 40%;
+  }
+  .fa-5x {
+    font-size: 12vw !important;
   }
   .icon-description {
     font-size: 3.9vw;
@@ -114,7 +110,10 @@
     text-align: center;
   }
   .myCard {
-    width: 35%;
+    width: 33%;
+  }
+  .fa-5x {
+    font-size: 15vw !important;
   }
   .row {
     width: 100%;
@@ -127,6 +126,18 @@
 @media screen and(min-width: 768px) and (max-width: 1023px) {
   .icon-description {
     letter-spacing: 0;
+  }
+  .myCard {
+    width: 33%;
+  }
+  .fa-5x {
+    font-size: 15vw !important;
+  }
+  .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
@@ -148,17 +159,31 @@
     width: 35%;
   }
 }
-
-// Wide Screens
-@media screen and(min-width: 1440px) {
-  .myCard {
-    width: 22%;
-    border-radius: 6%;
-  }
+// Laptop
+@media screen and(min-width: 1024px) and (max-width: 1439px) {
   .row {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .myCard {
+    width: 36%;
+    border-radius: 2%;
+  }
+}
+
+// Wide Screens
+@media screen and(min-width: 1440px) {
+  .myCard {
+    width: 18%;
+    border-radius: 2%;
+  }
+  .row {
+    width: 80%;
+    margin: 10vw auto 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 }

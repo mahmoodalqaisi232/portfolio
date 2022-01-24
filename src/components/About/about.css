@@ -126,13 +126,16 @@ blockquote {
             flex-direction: column;
   }
   .myImg-about {
-    width: 40%;
+    width: 30%;
   }
   figure {
     text-align: center;
   }
   .title {
     margin: 0;
+  }
+  .card-body p {
+    font-size: 3.8vw;
   }
 }
 
@@ -144,8 +147,7 @@ blockquote {
     font-size: 8vw;
   }
   blockquote {
-    font-size: 4.6vw;
-    margin: 0;
+    display: none;
   }
   .info-about {
     -webkit-box-orient: vertical;
@@ -154,13 +156,16 @@ blockquote {
             flex-direction: column;
   }
   .myImg-about {
-    width: 45%;
+    width: 30%;
   }
   figure {
     text-align: center;
   }
   .title {
     margin: 0;
+  }
+  .card-body p {
+    font-size: 3.2vw;
   }
 }
 
@@ -176,6 +181,7 @@ blockquote {
   }
   .about-content-container {
     width: 90%;
+    height: auto;
   }
   .info-about {
     -webkit-box-orient: vertical;

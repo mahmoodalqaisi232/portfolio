@@ -23,8 +23,8 @@ class Tech extends React.Component {
           </h1>
           <br />
           {/* Row */}
-          <Fade direction="up">
-            <div className="row m-auto d-flex justify-content-center p-1">
+          <Fade>
+            <div className="row d-flex justify-content-center ">
               {/* <!-- Cards --> */}
 
               <div className="card myCard">

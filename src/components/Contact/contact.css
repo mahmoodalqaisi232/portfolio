@@ -179,6 +179,9 @@ input:focus {
   input {
     width: 100%;
   }
+  .contact-right::before {
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
@@ -197,10 +200,16 @@ input:focus {
     height: 16vh;
   }
   .contactBtn {
-    width: 40%;
+    width: 45%;
   }
   input {
     width: 100%;
+  }
+  .textAreaLabel {
+    padding-left: 1vw;
+  }
+  .contact-right::before {
+    width: 90%;
   }
 }
 
@@ -224,6 +233,9 @@ input:focus {
   }
   input {
     width: 100%;
+  }
+  .contact-right::before {
+    width: 90%;
   }
 }
 
@@ -282,7 +294,7 @@ input:focus {
     padding-left: 1vw;
   }
   .textarea {
-    width: 91%;
+    width: 77%;
   }
 }
 /*# sourceMappingURL=contact.css.map */

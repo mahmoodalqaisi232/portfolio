@@ -148,6 +148,9 @@ $bgColor: rgba(204, 131, 63, 0.356);
     padding: 10vw 2.4vw;
     font-size: 8vw;
   }
+  .hero-content::after {
+    font-size: 1.7vw;
+  }
 }
 // Laptop
 @media screen and(min-width: 1024px) and (max-width: 1439px) {

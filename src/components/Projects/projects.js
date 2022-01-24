@@ -22,8 +22,8 @@ class Projects extends React.Component {
       return (
         <SwiperSlide>
           <div className="project-card-left">
-            <p className="card-left-text fw-bold"> Project {el.id} </p>
-            <p className="text-start">
+            <p className="card-left-title fw-bold"> Project {el.id} </p>
+            <p className="card-left-text">
               {el.description ? el.description : "Under Construction..."}
             </p>
           </div>
