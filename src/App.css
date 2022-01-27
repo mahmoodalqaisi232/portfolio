@@ -5,20 +5,13 @@
   font-display: swap;
 }
 
-body {
-  overflow: visible;
-  -webkit-animation: overFlow 4s linear normal;
-          animation: overFlow 4s linear normal;
-}
-
-body::before {
-  content: " Moe.Qaisi ";
-  font-family: "Comforter",cursive;
-  font-size: 15vw;
-  color: #fff;
+#entrance {
+  position: fixed;
   height: 100vh;
   width: 100vw;
-  position: fixed;
+  z-index: 100;
+  background-color: darkslategrey;
+  overflow-y: visible;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,13 +21,55 @@ body::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 0;
-  right: 0;
-  left: 0;
-  background-color: darkslategrey;
-  z-index: 100;
-  -webkit-animation: myAnim 2s linear 3s 1 normal forwards;
-          animation: myAnim 2s linear 3s 1 normal forwards;
+  font-size: 10vw;
+  -webkit-animation: slideOut 2s cubic-bezier(0.57, 0.21, 0.69, 1.25) 2s 1 alternate both;
+          animation: slideOut 2s cubic-bezier(0.57, 0.21, 0.69, 1.25) 2s 1 alternate both;
+}
+
+#entrance span {
+  background: transparent;
+  color: rgba(0, 0, 0, 0.705);
+  font-weight: lighter;
+  letter-spacing: 3px;
+  position: relative;
+  outline: 2px solid #030303;
+  padding: 0 4vw;
+}
+
+#entrance span::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-2vw) translateY(-2vw);
+          transform: translateX(-2vw) translateY(-2vw);
+  position: absolute;
+  border: #020202 2px solid;
+}
+
+@-webkit-keyframes slideOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+    opacity: 0;
+  }
 }
 
 #topBox {

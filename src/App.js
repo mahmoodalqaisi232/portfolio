@@ -15,6 +15,7 @@ class App extends React.Component {
     this.scrolling();
     return (
       <>
+      <div id="entrance"><span>Moe.Qaisi</span></div>
         <div id="topBox">
           <FontAwesomeIcon
             icon={faChevronUp}
