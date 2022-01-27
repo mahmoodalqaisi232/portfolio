@@ -159,7 +159,8 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .row {
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

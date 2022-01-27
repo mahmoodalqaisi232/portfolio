@@ -10,6 +10,6 @@
 // Mobile
 @media screen and(min-width:425px) and(max-width:767px){.section-heading-tech{font-size:8vw}.section-heading-tech-bg{text-align:center}.row{width:100%;display:flex;flex-wrap:wrap;justify-content:space-around}.myCard{width:35%}}
 // Laptop
-@media screen and(min-width:1024px) and (max-width:1439px){.row{width:100%;display:flex;flex-wrap:wrap;justify-content:space-around}.myCard{width:36%;border-radius:2%}}
+@media screen and(min-width:1024px) and (max-width:1439px){.row{margin: 0 auto;width:80%;display:flex;flex-wrap:wrap;justify-content:space-around}.myCard{width:36%;border-radius:2%}}
 // Wide Screens
 @media screen and(min-width:1440px){.myCard{width:18%;border-radius:2%}.row{width:80%;margin:10vw auto 0;flex-wrap:wrap;justify-content:space-between;align-items:center}}
