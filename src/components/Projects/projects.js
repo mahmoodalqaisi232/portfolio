@@ -14,7 +14,7 @@ class Projects extends React.Component {
           </div>
           <div className="card project-card p-0">
             <figure className="card-image-container m-0">
-              <img src={require("../images/" + el.imgUrl + ".webp")}className="cardImg"alt={el.title}/>
+              <img src={require("../images/" + el.imgUrl + ".webp")}className="img-fluid cardImg" alt={el.title} loading="lazy"/>
             </figure>
             <div className="project-card-body pt-2 text-center ">
               <p className="project-card-title text-center m-0 fw-bold ">{el.title}</p>

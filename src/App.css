@@ -1,11 +1,113 @@
 @import url("https://fonts.googleapis.com/css2?family=Rouge+Script&family=Saira+Condensed:wght@300&family=Saira:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rouge+Script&family=Saira+Condensed:wght@300&family=Saira:wght@100&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Anton&family=Comforter&display=swap);
 * {
   font-family: "saira", sans-serif;
-  max-width: 100%;
+  font-display: swap;
 }
 
-/* #app {
-  height: 100%;
-} */
+body {
+  overflow: visible;
+  -webkit-animation: overFlow 4s linear normal;
+          animation: overFlow 4s linear normal;
+}
+
+body::before {
+  content: " Moe.Qaisi ";
+  font-family: "Comforter",cursive;
+  font-size: 15vw;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: darkslategrey;
+  z-index: 100;
+  -webkit-animation: myAnim 2s linear 3s 1 normal forwards;
+          animation: myAnim 2s linear 3s 1 normal forwards;
+}
+
+#topBox {
+  position: fixed;
+  left: 1vw;
+  bottom: 5%;
+  width: 4vw;
+  height: 5vh;
+  padding-top: .5vh;
+  color: bisque;
+  z-index: 25;
+  text-align: center;
+  display: none;
+}
+
+#topBox .arrow {
+  -webkit-animation: arrowUp 1s infinite linear both;
+          animation: arrowUp 1s infinite linear both;
+  cursor: pointer;
+  scroll-behavior: smooth;
+}
+
+@-webkit-keyframes arrowUp {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@keyframes arrowUp {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@-webkit-keyframes myAnim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@-webkit-keyframes overFlow {
+  from {
+    overflow: hidden;
+  }
+}
+
+@keyframes overFlow {
+  from {
+    overflow: hidden;
+  }
+}
 /*# sourceMappingURL=App.css.map */

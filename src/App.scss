@@ -1,10 +1,3 @@
 @import url("https://fonts.googleapis.com/css2?family=Rouge+Script&family=Saira+Condensed:wght@300&family=Saira:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rouge+Script&family=Saira+Condensed:wght@300&family=Saira:wght@100&display=swap");
-* {
-  font-family: "saira", sans-serif;
-  max-width: 100%;
-}
-
-/* #app {
-  height: 100%;
-} */
+* {font-family: "saira", sans-serif; font-display: swap;}
+@import url(https://fonts.googleapis.com/css2?family=Anton&family=Comforter&display=swap);body{overflow:visible;animation:overFlow 4s linear normal}body::before{content:" Moe.Qaisi ";font-family:"Comforter",cursive;font-size:15vw;color:#fff;height:100vh;width:100vw;position:fixed;display:flex;justify-content:center;align-items:center;top:0;right:0;left:0;background-color:darkslategrey;z-index:100;animation:myAnim 2s linear 3s 1 normal forwards}#topBox{position:fixed;left:1vw;bottom:5%;width:4vw;height:5vh;padding-top:.5vh;color:bisque;z-index:25;text-align:center;display:none;.arrow{animation:arrowUp 1s infinite linear both;cursor:pointer;scroll-behavior:smooth}}@keyframes arrowUp{from{transform:translateY(0)}to{transform:translateY(-10px)}}@keyframes myAnim{0%{opacity:1}100%{opacity:0;z-index:-10}}@keyframes overFlow{from{overflow:hidden}}

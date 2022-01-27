@@ -1,2 +1,154 @@
-@font-face{font-family:"Slatzone";src:local("Slatzone"),url(../../fonts/Slaztone.otf) format("truetype")}.hero-container{position:relative;z-index:-3;height:100vh;width:100%;background-image:url(../images/sea.webp);background-repeat:no-repeat;background-size:cover;background-position:center}.hero-content{position:relative;width:55%;margin:0 auto;height:40%;margin-top:15vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:rgba(3,7,8,.561);-webkit-box-shadow:rgba(227,227,233,.1) 0 0 25px;box-shadow:rgba(227,227,233,.1) 0 0 25px;border-left:bisque 2px solid}.section-heading{font-size:7vw;font-family:"Slatzone","saira",sans-serif;padding-top:4vh;color:bisque;-webkit-transition:all 0.3s cubic-bezier(0,1.5,1,1.5);transition:all 0.3s cubic-bezier(0,1.5,1,1.5)}.section-heading-xl{font-size:6vw;padding-left:6vw}.hero-description{font-weight:700;font-size:2.2vw;color:rgba(255,255,255,.876)}.hero-description:before{content:"< "}.hero-description:after{content:" />"}@media screen and (max-width:374px){.section-heading{font-size:5vh;padding:7vh 1vh}.hero-content{width:90%}.hero-description{font-size:3vh}.hero-content::after{font-size:2.8vw}}@media screen and (min-width:375px) and (max-width:424px){.section-heading{font-size:7.3vw;padding:14vw 2.4vw}.hero-content{width:90%}.hero-description{font-size:5vw}.hero-content::after{font-size:2.9vw}}@media screen and (min-width:425px) and (max-width:767px){.hero-content{width:90%;height:45vh}.section-heading{padding:12vw 2.5vw;font-size:8vw;margin:0}.hero-description{font-size:6vw}.hero-content::after{padding:.5vw;font-size:2.3vw;font-weight:700}}@media screen and (min-width:768px) and (max-width:1023px){.section-heading{padding:10vw 2.4vw;font-size:8vw}.hero-content::after{font-size:1.7vw}}@media screen and (min-width:1024px) and (max-width:1439px){.hero-description{font-size:3vw}.hero-content::after{font-size:1.2vw}.hero-content{width:65%}}@media screen and (min-width:1440px){.hero-content{width:70%}}
+@font-face {
+  font-family: "Slatzone";
+  src: local("Slatzone"), url(../../fonts/Slaztone.otf) format("truetype");
+  font-display: swap;
+}
+
+.hero-container {
+  position: relative;
+  z-index: -3;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/sea.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  position: relative;
+  width: 55%;
+  margin: 0 auto;
+  height: 40%;
+  margin-top: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(3, 7, 8, 0.561);
+  -webkit-box-shadow: rgba(227, 227, 233, 0.1) 0px 0px 25px;
+          box-shadow: rgba(227, 227, 233, 0.1) 0px 0px 25px;
+  border-left: bisque 2px solid;
+}
+
+.section-heading {
+  font-size: 7vw;
+  font-family: "Slatzone","saira",sans-serif;
+  padding-top: 4vh;
+  color: bisque;
+  -webkit-transition: all 0.3s cubic-bezier(0, 1.5, 1, 1.5);
+  transition: all 0.3s cubic-bezier(0, 1.5, 1, 1.5);
+}
+
+.section-heading-xl {
+  font-size: 6vw;
+  padding-left: 6vw;
+}
+
+.hero-description-container {
+  min-width: 70%;
+}
+
+.hero-description {
+  font-weight: 700;
+  font-size: 2.2vw;
+  color: rgba(255, 255, 255, 0.876);
+}
+
+.hero-description:before {
+  content: "< ";
+}
+
+.hero-description:after {
+  content: " />";
+}
+
+@media screen and (max-width: 374px) {
+  .section-heading {
+    font-size: 5vh;
+    padding: 7vh 1vh;
+  }
+  .hero-content {
+    width: 90%;
+  }
+  .hero-description {
+    font-size: 3vh;
+  }
+  .hero-content::after {
+    font-size: 2.8vw;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .section-heading {
+    font-size: 7.3vw;
+    padding: 14vw 2.4vw;
+  }
+  .hero-content {
+    width: 90%;
+  }
+  .hero-description {
+    font-size: 5vw;
+  }
+  .hero-content::after {
+    font-size: 2.9vw;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .hero-content {
+    width: 90%;
+    height: 45vh;
+  }
+  .section-heading {
+    padding: 12vw 2.5vw;
+    font-size: 8vw;
+    margin: 0;
+  }
+  .hero-description {
+    font-size: 6vw;
+  }
+  .hero-content::after {
+    padding: .5vw;
+    font-size: 2.3vw;
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .section-heading {
+    padding: 10vw 2.4vw;
+    font-size: 8vw;
+  }
+  .hero-content::after {
+    font-size: 1.7vw;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .hero-description {
+    font-size: 3vw;
+  }
+  .hero-content::after {
+    font-size: 1.2vw;
+  }
+  .hero-content {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-content {
+    width: 70%;
+  }
+}
 /*# sourceMappingURL=hero.css.map */
