@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&family=Rouge+Script&family=Saira+Condensed:wght@300&family=Saira:wght@100&display=swap");
 .about-section {
   height: 100vh;
   min-height: 100% !important;
-  background: url("../images/nature2.jpg");
+  background: url(../images/sea.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,18 +13,16 @@
 }
 
 .section-heading-about {
-  font-family: "Slatzone", "saira", sans-serif;
+  font-family: "Slatzone","saira",sans-serif;
   font-size: 5vw;
   text-align: end;
-  color: rgba(255, 255, 255, 0.904);
+  color: #fff;
   margin: 0;
-  -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2 both;
-  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1 both;
 }
 
 .about-content-container {
   margin: 0 auto;
-  font-weight: bold;
+  font-weight: 700;
   padding: 0;
   width: 100%;
   display: -webkit-box;
@@ -37,7 +34,7 @@
 }
 
 .img-container {
-  padding-left: 0.4vw;
+  padding-left: .4vw;
   padding-top: 1vh;
 }
 
@@ -74,39 +71,15 @@
 }
 
 blockquote {
-  border: 1px bisque solid;
+  border: bisque 1px solid;
   width: 75%;
   margin: 4vh auto;
+  -webkit-box-shadow: rgba(227, 227, 233, 0.1) 0px 0px 25px;
+          box-shadow: rgba(227, 227, 233, 0.1) 0px 0px 25px;
 }
 
 .card-body p {
   text-align: justify;
-}
-
-@-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
-  }
-}
-
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
-  }
 }
 
 @media screen and (max-width: 374px) {

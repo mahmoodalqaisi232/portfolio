@@ -1,26 +1,25 @@
 @font-face {
   font-family: "Slatzone";
-  src: local("Slatzone"), url("../../fonts/Slaztone.otf") format("truetype");
+  src: local("Slatzone"), url(../../fonts/Slaztone.otf) format("truetype");
 }
 
 .section-heading-contact-bg {
   background-color: rgba(0, 0, 0, 0.596);
   text-align: end;
+  width: 100%;
 }
 
 .section-heading-contact {
-  font-family: "Slatzone", "saira", sans-serif;
+  font-family: "Slatzone","saira",sans-serif;
   font-size: 5vw;
-  color: rgba(255, 255, 255, 0.904);
+  color: #fff;
   margin: 0;
-  -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2 both;
-  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1 both;
 }
 
 .form-section {
   height: 100vh;
   min-height: 100% !important;
-  background: url("../images/nature2.jpg");
+  background: url(../images/tree1.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,7 +29,7 @@
   background-color: #070707;
   -webkit-box-shadow: rgba(227, 227, 233, 0.1) 0px 0px 25px;
           box-shadow: rgba(227, 227, 233, 0.1) 0px 0px 25px;
-  color: white;
+  color: #fff;
   height: 60%;
   width: 75%;
   margin: 7vh auto 0;
@@ -58,7 +57,7 @@
 .contact-heading:before {
   content: " ";
   position: absolute;
-  border-top: 2px solid bisque;
+  border-top: bisque 1px solid;
   z-index: -1;
   top: 70%;
   left: 10%;
@@ -86,11 +85,10 @@
 
 textarea {
   margin-left: 1vw;
-  font-weight: bold;
+  font-weight: 700;
   resize: none;
   width: 90%;
   height: 12vh;
-  color: black;
 }
 
 label {
@@ -102,7 +100,7 @@ label:not(:last-of-type) {
 }
 
 input {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 input:focus {
@@ -113,7 +111,7 @@ input:focus {
   width: 40%;
   position: relative;
   padding: 1vw;
-  font-weight: bold;
+  font-weight: 700;
   z-index: 33;
 }
 
@@ -130,32 +128,6 @@ input:focus {
 .contactBtn {
   background-color: darkslategrey;
   width: 20%;
-}
-
-@-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
-  }
-}
-
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
-  }
 }
 
 @media screen and (max-width: 374px) {

@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Slatzone";
-  src: local("Slatzone"), url("../../fonts/Slaztone.otf") format("truetype");
+  src: local("Slatzone"), url(../../fonts/Slaztone.otf) format("truetype");
 }
 
 .side-bar {
   position: fixed;
   padding-top: 3vh;
-  padding-left: 0.2vw;
+  padding-left: .2vw;
   width: 12vw;
   height: 100vh;
   display: -webkit-box;
@@ -16,7 +16,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 1000;
+  z-index: 22;
   border-bottom-right-radius: 1%;
 }
 
@@ -35,14 +35,12 @@
           transform: rotate(3deg);
 }
 
-.hamburger-top,
-.hamburger-middle,
-.hamburger-bottom {
-  background-color: white;
+.hamburger-top, .hamburger-middle, .hamburger-bottom {
+  background-color: #fff;
   width: 2.5vw;
   border-radius: 8%;
-  height: 0.4vh;
-  margin-bottom: 0.4vw;
+  height: .4vh;
+  margin-bottom: .4vw;
   -webkit-transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
 }
@@ -71,7 +69,7 @@
 
 .sideNavHidden {
   height: 100vh;
-  width: 10vw;
+  width: 12vw;
   color: white;
   visibility: hidden;
 }
@@ -83,9 +81,10 @@
 }
 
 .menu {
+  width: 12vw;
   margin-top: 5vh;
   height: 40vh;
-  padding-right: 1vw;
+  padding: 1vw;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,7 +99,7 @@
 }
 
 .menu > li {
-  font-weight: bold;
+  font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,6 +110,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 5%;
+  width: 100%;
   -webkit-transition-delay: 0;
           transition-delay: 0;
   cursor: pointer;
@@ -121,19 +121,12 @@ li:hover {
 }
 
 li > a {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
 li > a:hover {
   color: bisque;
-}
-
-.logo {
-  font-family: "Rouge Script", cursive, sans-serif;
-  font-size: 2.3vw;
-  margin-top: 26vh;
-  color: rgba(204, 131, 63, 0.849);
 }
 
 @media screen and (max-width: 374px) {
@@ -185,10 +178,8 @@ li > a:hover {
     height: 3vh;
     width: 10vw;
   }
-  .hamburger-top,
-  .hamburger-middle,
-  .hamburger-bottom {
-    margin: 0.4vh;
+  .hamburger-top, .hamburger-middle, .hamburger-bottom {
+    margin: .4vh;
     width: 100%;
   }
   .change .hamburger-top {
@@ -254,10 +245,8 @@ li > a:hover {
     height: 3vh;
     width: 10vw;
   }
-  .hamburger-top,
-  .hamburger-middle,
-  .hamburger-bottom {
-    margin: 0.4vh;
+  .hamburger-top, .hamburger-middle, .hamburger-bottom {
+    margin: .4vh;
     width: 100%;
   }
   .change .hamburger-bottom {
@@ -319,10 +308,8 @@ li > a:hover {
     height: 3vh;
     width: 10vw;
   }
-  .hamburger-top,
-  .hamburger-middle,
-  .hamburger-bottom {
-    margin-bottom: 0.9vw;
+  .hamburger-top, .hamburger-middle, .hamburger-bottom {
+    margin-bottom: .9vw;
     width: 100%;
   }
   .change .hamburger-bottom {
@@ -352,6 +339,7 @@ li > a:hover {
   .menu {
     padding-top: 3vh;
     margin: 0;
+    width: 80vw;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -361,7 +349,7 @@ li > a:hover {
         justify-content: space-around;
   }
   .sideNavHidden {
-    width: 80%;
+    width: 90vw;
     height: 6%;
   }
   .change:not(#hamburger-menu) {
@@ -373,20 +361,12 @@ li > a:hover {
     height: 3vh;
     width: 4vw;
   }
-  .hamburger-top,
-  .hamburger-middle,
-  .hamburger-bottom {
-    margin-bottom: 0.6vw;
+  .hamburger-top, .hamburger-middle, .hamburger-bottom {
+    margin-bottom: .6vw;
     width: 4vw;
   }
   .menu > li {
     height: 3vh;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .menu > li:first-of-type {
-    margin-left: -2vw;
   }
 }
 

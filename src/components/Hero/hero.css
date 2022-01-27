@@ -1,20 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&family=Rouge+Script&family=Saira+Condensed:wght@300&family=Saira:wght@100&display=swap");
 @font-face {
   font-family: "Slatzone";
-  src: local("Slatzone"), url("../../fonts/Slaztone.otf") format("truetype");
+  src: local("Slatzone"), url(../../fonts/Slaztone.otf) format("truetype");
 }
 
 .hero-container {
+  position: relative;
+  z-index: -3;
   height: 100vh;
   width: 100%;
-  background-image: url("../images/sea.jpg");
+  background-image: url(../images/sea.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .hero-content {
-  font-family: -apple-system, sans-serif;
   position: relative;
   width: 55%;
   margin: 0 auto;
@@ -39,24 +39,11 @@
   border-left: bisque 2px solid;
 }
 
-.hero-content::after {
-  content: "JavaScript / React / Angular / TypeScript / CSS3 / SCSS / Bootstrap";
-  background-color: darkslategrey;
-  color: rgba(255, 255, 255, 0.863);
-  position: absolute;
-  padding: 0 0.7vw;
-  font-size: 1.5vh;
-  right: 0;
-  bottom: 0;
-}
-
 .section-heading {
   font-size: 7vw;
-  font-family: "Slatzone", "saira", sans-serif;
+  font-family: "Slatzone","saira",sans-serif;
   padding-top: 4vh;
   color: bisque;
-  -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2 both;
-  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2 both;
   -webkit-transition: all 0.3s cubic-bezier(0, 1.5, 1, 1.5);
   transition: all 0.3s cubic-bezier(0, 1.5, 1, 1.5);
 }
@@ -67,43 +54,17 @@
 }
 
 .hero-description {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 2.2vw;
-  color: rgba(255, 255, 255, 0.815);
+  color: rgba(255, 255, 255, 0.876);
 }
 
 .hero-description:before {
-  content: "{ ";
+  content: "< ";
 }
 
 .hero-description:after {
-  content: " }";
-}
-
-@-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
-  }
-}
-
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
-  }
+  content: " />";
 }
 
 @media screen and (max-width: 374px) {
@@ -152,9 +113,9 @@
     font-size: 6vw;
   }
   .hero-content::after {
-    padding: 0.5vw;
+    padding: .5vw;
     font-size: 2.3vw;
-    font-weight: bold;
+    font-weight: 700;
   }
 }
 

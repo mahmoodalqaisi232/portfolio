@@ -1,63 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rouge+Script&family=Saira+Condensed:wght@300&family=Saira:wght@100&display=swap");
 @font-face {
   font-family: "Slatzone";
-  src: local("Slatzone"), url("../../fonts/Slaztone.otf") format("truetype");
+  src: local("Slatzone"), url(../../fonts/Slaztone.otf) format("truetype");
 }
 
 .tech-container {
   height: 100vh;
-  background: url("../images/nature2.jpg");
+  background: url(../images/tree1.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .section-heading-tech-bg {
-  background-color: rgba(0, 0, 0, 0.76);
+  background-color: rgba(0, 0, 0, 0.596);
   text-align: end;
 }
 
 .section-heading-tech {
-  font-family: "Slatzone", "saira", sans-serif;
+  font-family: "Slatzone","saira",sans-serif;
   font-size: 5vw;
-  color: rgba(255, 255, 255, 0.904);
+  color: #fff;
   margin: 0;
-  -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2 both;
-  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1 both;
-}
-
-@-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
-  }
-}
-
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
-  }
 }
 
 .myCard {
   background-color: rgba(3, 7, 8, 0.561);
-  -webkit-box-shadow: rgba(224, 224, 230, 0.13) 0px 0px 40px;
-          box-shadow: rgba(224, 224, 230, 0.13) 0px 0px 40px;
-  color: white;
+  -webkit-box-shadow: rgba(227, 227, 233, 0.1) 0px 0px 25px;
+          box-shadow: rgba(227, 227, 233, 0.1) 0px 0px 25px;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,8 +54,7 @@
 }
 
 .icon-description {
-  font-weight: bold;
-  letter-spacing: 2px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 374px) {
