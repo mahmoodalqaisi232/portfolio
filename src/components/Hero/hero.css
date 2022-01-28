@@ -50,8 +50,8 @@
 }
 
 .section-heading-xl {
-  font-size: 6vw;
-  padding-left: 6vw;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .hero-description-container {
