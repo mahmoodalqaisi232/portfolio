@@ -3,10 +3,10 @@ class Hero extends React.Component {
   render() {
     return (
       <div className="hero-container">
-         <h1 className="pb-3 section-heading text-center">Welcome to My World</h1>
+         <h1 className="section-heading text-center">Welcome to My World</h1>
         <AttentionSeeker effect="headShake" className="hero-content">
           <div className="text-white text-center hero-description-container">
-            <div className="mt-4 mb-0 p-2 hero-description" id="myText">
+            <div className="mt-4 mb-0 p-2 hero-description">
               <Typewriter options={{strings:["Hi !","I'm Mahmood","Frontend Web Developer"],autoStart:!0,loop:!0,}}/>
             </div>
           </div>
