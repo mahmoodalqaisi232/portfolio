@@ -8,9 +8,7 @@ class Nav extends React.Component {
           <div id="hamburger-menu" onClick={this.showMenu}>
             <div className="hamburger-top"></div>
             <div className="hamburger-middle"></div>
-            <div className="hamburger-bottom"></div>
-          </div>
-          <nav className="sideNavHidden"><ul className="menu"><li><a href="#tech">Technologies</a></li><li><a href="#projects">Projects</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
-        </div>
+            <div className="hamburger-bottom"></div></div>
+          <nav className="sideNavHidden"><ul className="menu"><li><a href="#tech">Technologies</a></li><li><a href="#projects">Projects</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li><li id="myLogo"><span>Moe.Qaisi</span></li></ul></nav></div>
       </>);}}
 export default Nav;
