@@ -42,7 +42,7 @@
   -webkit-box-shadow: rgba(227, 227, 233, 0.1) 0px 0px 25px;
           box-shadow: rgba(227, 227, 233, 0.1) 0px 0px 25px;
   width: 40%;
-  height: 55%;
+  height: 60%;
 }
 
 .project-card-body {
@@ -124,9 +124,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .project-card {
     width: 70%;

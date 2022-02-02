@@ -29,7 +29,7 @@ class Contact extends React.Component {
                 </div>
               </form>
               <div className="contact-right mt-5">
-                <p className="m-0 ">Please feel free to write a feedback or contact me if you havequestions about me or my work .</p>
+                <p className="m-0 ">Please feel free to write a feedback or contact me if you have questions about me or my work .</p>
               </div>
             </div>
           </div>
