@@ -18,6 +18,7 @@ class Projects extends React.Component {
             </figure>
             <div className="project-card-body pt-2 text-center ">
               <p className="project-card-title text-center m-0 fw-bold ">{el.title}</p>
+              <button className="btn btn-danger card-btn"><a href={el.link}>to Project</a></button>
             </div>
           </div>
         </SwiperSlide>);});
