@@ -11,6 +11,9 @@ const data = [
     id: 2,
     title: "Newspaper",
     imgUrl: "newspaperCropped",
+    link: "https://cr2-moeqaisi.netlify.app/",
+    description:
+    " Simple newspaper Project using Html,Css",
   },
   {
     id: 3,
@@ -32,6 +35,7 @@ const data = [
     id: 5,
     title: "Travelex",
     imgUrl: "Travelex",
+    link: "https://cr6-moeqaisi.netlify.app/",
     description:
       " Travel Agency Project show some nice destinations with a cart ordering system using Angular and Bootstrap ",
   },
